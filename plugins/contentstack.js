@@ -2,10 +2,10 @@
 const Contentstack = require('contentstack')
 
 const Stack = Contentstack.Stack(
-  process.env.CONTENTSTACK_API_KEY,
-  process.env.CONTENTSTACK_DELIVERY_TOKEN,
-  process.env.CONTENTSTACK_ENVIRONMENT,
-  process.env.CONTENTSTACK_REGION ? process.env.CONTENTSTACK_REGION : ''
+  process.env.API_KEY,
+  process.env.DELIVERY_TOKEN,
+  process.env.ENVIRONMENT,
+  process.env.REGION ? process.env.REGION : 'us'
 )
 
 export default {
