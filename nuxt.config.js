@@ -1,4 +1,6 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
   target: 'static',
   env: {
     CONTENTSTACK_API_KEY: process.env.CONTENTSTACK_API_KEY,
@@ -80,4 +82,4 @@ export default {
 
   content: {},
   build: { html: { minify: { collapseWhitespace: true } } },
-}
+})

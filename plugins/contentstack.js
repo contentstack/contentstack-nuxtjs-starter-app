@@ -1,5 +1,5 @@
 // Module dependency
-const Contentstack = require('contentstack')
+import Contentstack from 'contentstack'
 
 const Stack = Contentstack.Stack(
   process.env.CONTENTSTACK_API_KEY,
